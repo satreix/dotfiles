@@ -23,8 +23,8 @@
 [branch]
     autosetupmerge  = true
 [user]
-    name    = TODO
-    email   = TODO
+    name    = AUTHORNAME
+    email   = AUTHOREMAIL
 [core]
     autocrlf = input
 [push]
