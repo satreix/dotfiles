@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/mnt/data/Work/install-me-an-arch'
+let g:netrw_dirhist_2='/mnt/data/Videos/Séries'
+let g:netrw_dirhist_3='/mnt/data/Work/Youenn/abalone'
+let g:netrw_dirhist_4='/mnt/data/Work/go/readFile_hosts'

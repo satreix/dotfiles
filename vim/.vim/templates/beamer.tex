@@ -1,0 +1,39 @@
+\documentclass[handout]{beamer}
+
+\usepackage[frenchb]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+
+\usetheme{Warsaw}
+
+\title{Title}
+\author{Adrien Schildknecht}
+\institute{EPITA}
+%\logo{\includegraphics[height=5mm]{epita.png}}
+
+\AtBeginSection[]
+{
+    \begin{frame}
+        \frametitle{Sommaire}
+        \tableofcontents[currentsection, hideothersubsections,
+        pausesubsections]
+    \end{frame}
+}
+
+\begin{document}
+
+\begin{frame}
+    \titlepage
+\end{frame}
+
+\section{Section}
+\subsection{S1}
+\begin{frame}[fragile]
+    \begin{semiverbatim}
+    \uncover<1->{1}
+    \uncover<2->{2}
+    \end{semiverbatim}
+\end{frame}
+
+\end{document}
+

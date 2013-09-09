@@ -1,0 +1,584 @@
+{
+	"folder_history":
+	[
+		"/mnt/data/Work/Youenn/Blob/server/blob",
+		"/mnt/data/Work/django",
+		"/mnt/data/Work/lpo2/LPO"
+	],
+	"last_version": 3047,
+	"last_window_id": 4,
+	"log_indexing": false,
+	"settings":
+	{
+		"new_window_height": 750.0,
+		"new_window_settings":
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+					[
+						"get",
+						"get_or_create_player"
+					],
+					[
+						"pl",
+						"player_scores"
+					],
+					[
+						"pla",
+						"player_scores"
+					],
+					[
+						"sco",
+						"score_object"
+					],
+					[
+						"margin",
+						"margin-bottom"
+					],
+					[
+						"st",
+						"style	Attr"
+					],
+					[
+						"RE",
+						"return"
+					],
+					[
+						"score",
+						"scores"
+					]
+				]
+			},
+			"build_system": "",
+			"command_palette":
+			{
+				"height": 375.0,
+				"selected_items":
+				[
+					[
+						"re",
+						"Package Control: Remove Package"
+					],
+					[
+						"r",
+						"Package Control: Remove Package"
+					],
+					[
+						"remo",
+						"Package Control: Remove Package"
+					],
+					[
+						"in",
+						"Package Control: Install Package"
+					],
+					[
+						"ins",
+						"Package Control: Install Package"
+					],
+					[
+						"inst",
+						"Package Control: Install Package"
+					],
+					[
+						"insta",
+						"Package Control: Install Package"
+					]
+				],
+				"width": 435.0
+			},
+			"console":
+			{
+				"height": 120.0,
+				"history":
+				[
+					"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())"
+				]
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"file_history":
+			[
+				"/mnt/data/Work/Youenn/Blob/server/blob/website/urls.py",
+				"/mnt/data/Work/Youenn/Blob/server/blob/website/templates/website/index.html",
+				"/mnt/data/Work/Youenn/Blob/server/blob/website/models.py",
+				"/mnt/data/Work/Youenn/Blob/server/blob/website/templates/website/player.html",
+				"/mnt/data/Work/Youenn/Blob/server/blob/website/views.py",
+				"/mnt/data/Work/Youenn/Blob/server/blob/website/static/website/css/index.css",
+				"/mnt/data/Work/Youenn/Blob/server/blob/blob/settings.py",
+				"/mnt/data/Work/Youenn/Blob/server/blob/blob/urls.py",
+				"/mnt/data/Work/Youenn/Blob/server/blob/api/urls.py",
+				"/mnt/data/Work/Youenn/Blob/server/blob/website/tests.py",
+				"/mnt/data/Work/Youenn/Blob/server/blob/api/handlers.py",
+				"/mnt/data/Work/Youenn/Blob/server/blob/website/admin.py",
+				"/home/satreix/.config/sublime-text-3/Packages/User/Default (Linux).sublime-keymap",
+				"/home/satreix/.config/sublime-text-2/Packages/Python PEP8 Autoformat/README.md",
+				"/home/satreix/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+				"/mnt/data/Work/Youenn/Blob/server/blob/website/migrations/0003_score_to_player.py",
+				"/mnt/data/Work/Youenn/Blob/server/blob/website/static/website/css/bootstrap.css",
+				"/mnt/data/Work/Youenn/Blob/server/blob/website/static/website/index.css",
+				"/mnt/data/Work/Youenn/Blob/server/blob/website/static/website/eyes.js",
+				"/mnt/data/Work/Youenn/Blob/server/blob/website/migrations/0001_initial.py",
+				"/mnt/data/Work/Youenn/Blob/server/blob/api/emitters.py",
+				"/mnt/data/Work/Youenn/Blob/server/blob/api/views.py",
+				"/mnt/data/Work/Youenn/Blob/server/blob/blob/wsgi.py",
+				"/mnt/data/Work/Youenn/Blob/server/blob/website/static/bootstrap.css",
+				"/mnt/data/Work/Youenn/Blob/server/blob/api/models.py",
+				"/mnt/data/Work/Youenn/blob.md",
+				"/mnt/data/Work/django/LPO/movies/models.py",
+				"/mnt/data/Work/django/LPO/LPO/settings.py",
+				"/mnt/data/Work/django/LPO/LPO/urls.py",
+				"/mnt/data/Work/django/LPO/movies/urls.py",
+				"/mnt/data/Work/django/LPO/movie/views.py",
+				"/mnt/data/Work/django/LPO/movie/urls.py",
+				"/mnt/data/Work/django/LPO/LPO/movie/__init__.py",
+				"/mnt/data/Work/django/LPO/models.py"
+			],
+			"find":
+			{
+				"height": 21.0
+			},
+			"find_in_files":
+			{
+				"height": 92.0,
+				"where_history":
+				[
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+					"')\n",
+					"highest_score_list",
+					"4",
+					"body",
+					"     ",
+					"’",
+					"True"
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": false,
+				"replace_history":
+				[
+				],
+				"reverse": true,
+				"show_context": true,
+				"use_buffer2": true,
+				"whole_word": false,
+				"wrap": true
+			},
+			"incremental_find":
+			{
+				"height": 21.0
+			},
+			"input":
+			{
+				"height": 30.0
+			},
+			"menu_visible": true,
+			"replace":
+			{
+				"height": 38.0
+			},
+			"save_all_on_build": true,
+			"select_file":
+			{
+				"height": 0.0,
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 0.0,
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_symbol":
+			{
+				"height": 230.0,
+				"selected_items":
+				[
+					[
+						"Score",
+						"Score"
+					]
+				],
+				"width": 378.0
+			},
+			"show_minimap": true,
+			"show_open_files": false,
+			"show_tabs": true,
+			"side_bar_visible": true,
+			"side_bar_width": 181.0,
+			"status_bar_visible": true,
+			"template_settings":
+			{
+			}
+		},
+		"new_window_width": 1364.0
+	},
+	"windows":
+	[
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+					[
+						"get",
+						"get_or_create_player"
+					],
+					[
+						"pl",
+						"player_scores"
+					],
+					[
+						"pla",
+						"player_scores"
+					],
+					[
+						"sco",
+						"score_object"
+					],
+					[
+						"margin",
+						"margin-bottom"
+					],
+					[
+						"st",
+						"style	Attr"
+					],
+					[
+						"RE",
+						"return"
+					],
+					[
+						"score",
+						"scores"
+					]
+				]
+			},
+			"buffers":
+			[
+				{
+					"file": "/mnt/data/Work/Youenn/Blob/server/blob/api/handlers.py",
+					"settings":
+					{
+						"buffer_size": 1208,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/mnt/data/Work/Youenn/Blob/server/blob/api/urls.py",
+					"settings":
+					{
+						"buffer_size": 572,
+						"line_ending": "Unix"
+					}
+				}
+			],
+			"build_system": "",
+			"command_palette":
+			{
+				"height": 375.0,
+				"selected_items":
+				[
+					[
+						"re",
+						"Package Control: Remove Package"
+					],
+					[
+						"r",
+						"Package Control: Remove Package"
+					],
+					[
+						"remo",
+						"Package Control: Remove Package"
+					],
+					[
+						"in",
+						"Package Control: Install Package"
+					],
+					[
+						"ins",
+						"Package Control: Install Package"
+					],
+					[
+						"inst",
+						"Package Control: Install Package"
+					],
+					[
+						"insta",
+						"Package Control: Install Package"
+					]
+				],
+				"width": 435.0
+			},
+			"console":
+			{
+				"height": 120.0,
+				"history":
+				[
+					"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())"
+				]
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"file_history":
+			[
+				"/mnt/data/Work/Youenn/Blob/server/blob/website/urls.py",
+				"/mnt/data/Work/Youenn/Blob/server/blob/website/templates/website/index.html",
+				"/mnt/data/Work/Youenn/Blob/server/blob/website/models.py",
+				"/mnt/data/Work/Youenn/Blob/server/blob/website/templates/website/player.html",
+				"/mnt/data/Work/Youenn/Blob/server/blob/website/views.py",
+				"/mnt/data/Work/Youenn/Blob/server/blob/website/static/website/css/index.css",
+				"/mnt/data/Work/Youenn/Blob/server/blob/blob/settings.py",
+				"/mnt/data/Work/Youenn/Blob/server/blob/blob/urls.py",
+				"/mnt/data/Work/Youenn/Blob/server/blob/api/urls.py",
+				"/mnt/data/Work/Youenn/Blob/server/blob/website/tests.py",
+				"/mnt/data/Work/Youenn/Blob/server/blob/api/handlers.py",
+				"/mnt/data/Work/Youenn/Blob/server/blob/website/admin.py",
+				"/home/satreix/.config/sublime-text-3/Packages/User/Default (Linux).sublime-keymap",
+				"/home/satreix/.config/sublime-text-2/Packages/Python PEP8 Autoformat/README.md",
+				"/home/satreix/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+				"/mnt/data/Work/Youenn/Blob/server/blob/website/migrations/0003_score_to_player.py",
+				"/mnt/data/Work/Youenn/Blob/server/blob/website/static/website/css/bootstrap.css",
+				"/mnt/data/Work/Youenn/Blob/server/blob/website/static/website/index.css",
+				"/mnt/data/Work/Youenn/Blob/server/blob/website/static/website/eyes.js",
+				"/mnt/data/Work/Youenn/Blob/server/blob/website/migrations/0001_initial.py",
+				"/mnt/data/Work/Youenn/Blob/server/blob/api/emitters.py",
+				"/mnt/data/Work/Youenn/Blob/server/blob/api/views.py",
+				"/mnt/data/Work/Youenn/Blob/server/blob/blob/wsgi.py",
+				"/mnt/data/Work/Youenn/Blob/server/blob/website/static/bootstrap.css",
+				"/mnt/data/Work/Youenn/Blob/server/blob/api/models.py",
+				"/mnt/data/Work/Youenn/blob.md",
+				"/mnt/data/Work/django/LPO/movies/models.py",
+				"/mnt/data/Work/django/LPO/LPO/settings.py",
+				"/mnt/data/Work/django/LPO/LPO/urls.py",
+				"/mnt/data/Work/django/LPO/movies/urls.py",
+				"/mnt/data/Work/django/LPO/movie/views.py",
+				"/mnt/data/Work/django/LPO/movie/urls.py",
+				"/mnt/data/Work/django/LPO/LPO/movie/__init__.py",
+				"/mnt/data/Work/django/LPO/models.py"
+			],
+			"find":
+			{
+				"height": 21.0
+			},
+			"find_in_files":
+			{
+				"height": 92.0,
+				"where_history":
+				[
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+					"')\n",
+					"highest_score_list",
+					"4",
+					"body",
+					"     ",
+					"’",
+					"True"
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": false,
+				"replace_history":
+				[
+				],
+				"reverse": true,
+				"show_context": true,
+				"use_buffer2": true,
+				"whole_word": false,
+				"wrap": true
+			},
+			"folders":
+			[
+				{
+					"follow_symlinks": true,
+					"path": "/mnt/data/Work/Youenn/Blob/server/blob"
+				}
+			],
+			"groups":
+			[
+				{
+					"selected": 0,
+					"sheets":
+					[
+						{
+							"buffer": 0,
+							"file": "/mnt/data/Work/Youenn/Blob/server/blob/api/handlers.py",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 1208,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										528,
+										528
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage",
+									"tab_size": 4,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 156.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 1,
+							"file": "/mnt/data/Work/Youenn/Blob/server/blob/api/urls.py",
+							"semi_transient": true,
+							"settings":
+							{
+								"buffer_size": 572,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										0,
+										0
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						}
+					]
+				}
+			],
+			"incremental_find":
+			{
+				"height": 21.0
+			},
+			"input":
+			{
+				"height": 30.0
+			},
+			"layout":
+			{
+				"cells":
+				[
+					[
+						0,
+						0,
+						1,
+						1
+					]
+				],
+				"cols":
+				[
+					0.0,
+					1.0
+				],
+				"rows":
+				[
+					0.0,
+					1.0
+				]
+			},
+			"menu_visible": true,
+			"position": "0,0,0,0,0,0,16,1364,766,1366,768",
+			"project": "",
+			"replace":
+			{
+				"height": 38.0
+			},
+			"save_all_on_build": true,
+			"select_file":
+			{
+				"height": 0.0,
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 0.0,
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_symbol":
+			{
+				"height": 230.0,
+				"selected_items":
+				[
+					[
+						"Score",
+						"Score"
+					]
+				],
+				"width": 378.0
+			},
+			"settings":
+			{
+			},
+			"show_minimap": true,
+			"show_open_files": false,
+			"show_tabs": true,
+			"side_bar_visible": true,
+			"side_bar_width": 181.0,
+			"status_bar_visible": true,
+			"template_settings":
+			{
+			},
+			"window_id": 4,
+			"workspace_name": ""
+		}
+	],
+	"workspaces":
+	{
+		"recent_workspaces":
+		[
+		]
+	}
+}

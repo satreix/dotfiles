@@ -1,0 +1,3 @@
+[
+    { "keys": ["ctrl+shift+f"], "command": "pep8_autoformat"}
+]
