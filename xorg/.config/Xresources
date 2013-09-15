@@ -1,0 +1,72 @@
+#define S_yellow        #f0e030
+#define S_orange        #fd971f
+#define S_red           #ff322f
+#define S_magenta       #d33682
+#define S_violet        #6c71c4
+#define S_blue          #268bd2
+#define S_cyan          #2aa198
+#define S_green         #a6e22e
+
+#define S_base03        #141414
+#define S_base02        #1B1D1E
+#define S_base01        #585858
+#define S_base00        #656565
+#define S_base0         #949494
+#define S_base1         #a1a1a1
+#define S_base2         #eeeeee
+#define S_base3         #fdfdfd
+
+URxvt*foreground:               S_base0
+*fading:                        30
+*fadeColor:                     S_base03
+URxvt*depth:                    32
+URxvt*background:               [98]#1B1D1E
+URxvt*cursorColor:              S_base1
+URxvt*pointerColorBackground:   S_base01
+URxvt*pointerColorForeground:   S_base1
+
+URxvt*color0:           S_base02
+URxvt*color1:           S_red
+URxvt*color2:           S_green
+URxvt*color3:           S_yellow
+URxvt*color4:           S_blue
+URxvt*color5:           S_magenta
+URxvt*color6:           S_cyan
+URxvt*color7:           S_base2
+URxvt*color9:           S_orange
+URxvt*color8:           S_base03
+URxvt*color10:          S_base01
+URxvt*color11:          S_base00
+URxvt*color12:          S_base0
+URxvt*color13:          S_violet
+URxvt*color14:          S_base1
+URxvt*color15:          S_base3
+
+URxvt*scrollBar: false
+*perl-ext-common:       default,matcher,clipboard
+*url-launcher:          /usr/bin/chromium
+*matcher.button:        C1
+
+xterm*background:             S_base03
+xterm*foreground:               S_base0
+xterm*depth:                    32
+xterm*cursorColor:              S_base1
+xterm*pointerColorBackground:   S_base01
+xterm*pointerColorForeground:   S_base1
+
+xterm*color0:           S_base02
+xterm*color1:           S_red
+xterm*color2:           S_green
+xterm*color3:           S_yellow
+xterm*color4:           S_blue
+xterm*color5:           S_magenta
+xterm*color6:           S_cyan
+xterm*color7:           S_base2
+xterm*color9:           S_orange
+xterm*color8:           S_base03
+xterm*color10:          S_base01
+xterm*color11:          S_base00
+xterm*color12:          S_base0
+xterm*color13:          S_violet
+xterm*color14:          S_base1
+xterm*color15:          S_base3

@@ -46,6 +46,7 @@ stow awesome
 stow git
 stow sublime3
 stow vim
+stow xorg
 stow zsh
 
 echo ''
