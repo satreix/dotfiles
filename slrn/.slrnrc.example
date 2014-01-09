@@ -1,0 +1,5 @@
+set realname "SLRNREALNAME"
+set username "SLRNUSERNAME"
+set hostname "SLRNHOSTNAME"
+set sorting_method 9
+visible_headers "From:,Reply-To:,Subject:,Newsgroups:,Followup-To:,Date:,User-Agent:,X-Mailer:"

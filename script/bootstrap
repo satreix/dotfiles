@@ -25,8 +25,7 @@ fail () {
 }
 
 setup_gitconfig () {
-  if ! [ -f git/.gitconfig ]
-  then
+  if [ ! -f git/.gitconfig ]; then
     info 'setup gitconfig'
 
     user ' - What is your github author name?'
@@ -40,18 +39,36 @@ setup_gitconfig () {
   fi
 }
 
-setup_gitconfig
+setup_slrnconfig () {
+  if [ ! -f slrn/.slrnrc ]; then
+    info 'setup slrnconfig'
 
-if hash gdate 2>/dev/null; then
+    user ' - What is your slrn realname? (Doe John)'
+    read -e slrn_realname
+    user ' - What is your slrn username? (doe_j)'
+    read -e slrn_username
+    user ' - What is your slrn hostname? (toto.com)'
+    read -e slrn_hostname
+
+    sed -e "s/SLRNREALNAME/$slrn_realname/g" -e "s/SLRNUSERNAME/$slrn_username/g" -e "s/SLRNHOSTNAME/$slrn_hostname/g" slrn/.slrnrc.example > slrn/.slrnrc
+
+    success 'slrnconfig'
+  fi
+}
+
+setup_gitconfig
+setup_slrnconfig
+
+if hash stow 2>/dev/null; then
   echo "Using stow to symlink configs."
 else
   echo >&2 "I require stow but it's not installed.  Aborting."
   exit 1
 fi
 
-
 stow awesome
 stow git
+stow slrn
 stow sublime3
 stow vim
 stow xorg
