@@ -58,6 +58,9 @@ export PAGER='most'
 
 alias clipboard='xclip -selection clipboard'
 alias reload='source ~/.zshrc'
+alias install='yaourt -S'
+alias uninstall='yaourt -Rsn'
+alias update='yaourt -Syu'
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
