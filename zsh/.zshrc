@@ -47,7 +47,7 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/core_perl"
+export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/core_perl:/home/satreix/.gem/ruby/2.1.0/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -61,6 +61,9 @@ alias reload='source ~/.zshrc'
 alias install='yaourt -S'
 alias uninstall='yaourt -Rsn'
 alias update='yaourt -Syu'
+alias bmnt='bashmount'
+alias zshrc="$EDITOR ~/.zshrc"
+alias jog='~/bin/jogsoul/jogsoul.pl ~/bin/jogsoul/jogsoul.conf'
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
