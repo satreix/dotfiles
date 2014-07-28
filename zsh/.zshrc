@@ -41,13 +41,14 @@ ZSH_THEME="jreese"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-plugins=(git django)
+plugins=(git autojump django)
 
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/core_perl:/home/satreix/.gem/ruby/2.1.0/bin"
+export PATH="$PATH:/home/barrau_s/.gem/ruby/2.1.0/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -70,3 +71,15 @@ alias jog='~/bin/jogsoul/jogsoul.pl ~/bin/jogsoul/jogsoul.conf'
 
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
+
+vpenis() {
+    echo `uptime|grep days|sed 's/.*up \([0-9]*\) day.*/\1\/10+/'; cat \
+    /proc/cpuinfo|grep '^cpu MHz'|awk '{print $4"/30 +";}';free|grep \
+    '^Mem'|awk '{print $3"/1024/3+"}'; df -P -k -x nfs | grep -v \
+    1k | awk '{if ($1 ~ "/dev/(scsi|sd|md)"){ s+= $2} s+= $2;} END \
+    {print s/1024/50"/15+70";}'`|bc|sed 's/\(.$\)/.\1cm/'
+}
+
+mkcd() {
+    mkdir -p "$1" && cd "$1";
+}
