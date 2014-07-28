@@ -1,78 +1,27 @@
-#!/usr/bin/env bash
-#
-# bootstrap installs dotfiles
+#!/bin/sh
 
 set -e
 
-DOTFILES_ROOT="`pwd`"
-
-info () {
-  printf "  [ \033[0;34m#\033[0m ] $1\n"
-}
-
-user () {
-  printf "\r  [ \033[0;33m?\033[0m ] $1 "
-}
-
-success () {
-  printf "\r\033[2K  [ \033[00;32mOK\033[0m ] $1\n"
-}
-
-fail () {
-  printf "\r\033[2K  [\033[0;31mFAIL\033[0m] $1\n"
-  echo ''
-  exit
-}
-
-setup_gitconfig () {
-  if [ ! -f git/.gitconfig ]; then
-    info 'setup gitconfig'
-
-    user ' - What is your github author name?'
-    read -e git_authorname
-    user ' - What is your github author email?'
-    read -e git_authoremail
-
-    sed -e "s/AUTHORNAME/$git_authorname/g" -e "s/AUTHOREMAIL/$git_authoremail/g" git/.gitconfig.example > git/.gitconfig
-
-    success 'gitconfig'
-  fi
-}
-
-setup_slrnconfig () {
-  if [ ! -f slrn/.slrnrc ]; then
-    info 'setup slrnconfig'
-
-    user ' - What is your slrn realname? (Doe John)'
-    read -e slrn_realname
-    user ' - What is your slrn username? (doe_j)'
-    read -e slrn_username
-    user ' - What is your slrn hostname? (toto.com)'
-    read -e slrn_hostname
-
-    sed -e "s/SLRNREALNAME/$slrn_realname/g" -e "s/SLRNUSERNAME/$slrn_username/g" -e "s/SLRNHOSTNAME/$slrn_hostname/g" slrn/.slrnrc.example > slrn/.slrnrc
-
-    success 'slrnconfig'
-  fi
-}
-
-setup_gitconfig
-setup_slrnconfig
-
-if hash stow 2>/dev/null; then
-  echo "Using stow to symlink configs."
-else
-  echo >&2 "I require stow but it's not installed.  Aborting."
-  exit 1
-fi
-
-stow awesome
-stow git
-stow slrn
-stow sublime3
-stow vim
-stow xorg
-stow zsh
+cd "$(dirname "$0")/.."
+DOTFILES_ROOT=$(pwd)
 
 echo ''
-echo '  All installed!'
+echo "dotfile: $DOTFILES_ROOT"
+echo "pwd:     $(pwd)"
+echo "home:    $HOME"
+echo ''
+
+bootstrap() {
+    echo -e "\033[34m$1\033[0m"
+    echo "  - $DOTFILES_ROOT/$1"
+    BOOT="$1/bootstrap"
+    if [ -x $BOOT ]; then
+        echo "  - Found executable install script"
+    else
+        echo "  - No install script"
+    fi
+}
+
+for i in $(ls -I '.gitignore' -I 'LICENSE' -I 'README.md' -I 'script'); do
+    bootstrap $i
+done
