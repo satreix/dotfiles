@@ -21,7 +21,7 @@
     undomerge       = reset --hard ORIG_HEAD
     oups            = commit -a --amend -C HEAD
 [branch]
-    autosetupmerge  = true
+    autosetuprebase = always
 [user]
     name    = AUTHORNAME
     email   = AUTHOREMAIL
