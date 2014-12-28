@@ -26,6 +26,7 @@ floating_modifier $mod
 # start a terminal
 bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+Shift+Return exec chromium
+bindsym $mod+Ctrl+Shift+Return exec pcmanfm
 bindsym $mod+Escape exec i3lock -c 000000
 
 # kill focused window
