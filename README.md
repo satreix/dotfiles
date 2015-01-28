@@ -2,13 +2,7 @@
 
 ## install
 
-You need GNU Stow installed for the install script to work. Run this:
-
-```sh
-git clone https://github.com/satreix/dotfiles.git ~/.dotfiles
-cd ~/.dotfiles
-script/bootstrap
-```
+After using gnu stow for some time now, I'm back to manually symlinking the configurations I need.
 
 ## vim
 
