@@ -46,14 +46,6 @@ plugins=(git autojump django)
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
-
-export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/core_perl:/home/satreix/.gem/ruby/2.1.0/bin"
-export PATH="$PATH:/home/barrau_s/.gem/ruby/2.1.0/bin"
-# export MANPATH="/usr/local/man:$MANPATH"
-
-# You may need to manually set your language environment
-# export LANG=en_US.UTF-8
-
 export EDITOR='vim'
 export PAGER='most'
 
