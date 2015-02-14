@@ -72,6 +72,5 @@ vpenis() {
     {print s/1024/50"/15+70";}'`|bc|sed 's/\(.$\)/.\1cm/'
 }
 
-mkcd() {
-    mkdir -p "$1" && cd "$1";
-}
+mkcd() { mkdir -p "$1" && cd "$1" }
+epath() { export PATH=$PATH:$1 }
