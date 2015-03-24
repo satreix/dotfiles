@@ -28,6 +28,20 @@ bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+Shift+Return exec chromium
 bindsym $mod+Escape exec i3lock -c 000000
 
+set $Locker i3lock && sleep 1
+
+set $mode_system System (e) logout, (r) reboot, (s) shutdown
+mode "$mode_system" {
+    bindsym e exec --no-startup-id i3-msg exit, mode "default"
+    bindsym r exec --no-startup-id systemctl reboot, mode "default"
+    bindsym s exec --no-startup-id systemctl poweroff -i, mode "default"  
+
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+
+bindsym $mod+Ctrl+Escape mode "$mode_system"
+
 # kill focused window
 bindsym $mod+Shift+q kill
 
