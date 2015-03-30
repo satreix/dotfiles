@@ -1,8 +1,5 @@
-# Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
-# Set name of the theme to load.
-# Look in ~/.oh-my-zsh/themes/
 ZSH_THEME="jreese"
 
 # Uncomment the following line to use case-sensitive completion.
@@ -41,7 +38,7 @@ ZSH_THEME="jreese"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-plugins=(git autojump django)
+plugins=(autojump colorize docker git jsontools nmap python pylint zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -57,12 +54,6 @@ alias update='yaourt -Syu'
 alias bmnt='bashmount'
 alias zshrc="$EDITOR ~/.zshrc"
 alias jog='~/bin/jogsoul/jogsoul.pl ~/bin/jogsoul/jogsoul.conf'
-
-# Compilation flags
-# export ARCHFLAGS="-arch x86_64"
-
-# ssh
-# export SSH_KEY_PATH="~/.ssh/dsa_id"
 
 vpenis() {
     echo `uptime|grep days|sed 's/.*up \([0-9]*\) day.*/\1\/10+/'; cat \
