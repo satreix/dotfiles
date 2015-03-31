@@ -5,17 +5,43 @@
 After using *Gnu stow* for some time now, I'm back to manually symlinking the configurations I need.
 I rely on `autojump`, `pygmentize`, `zsh-syntax-highlighting` and other CLI goodies to enhance `zsh` experience.
 
-## Vim
+## Components
 
-### Components
+### Git
 
-- Pathogen
+Basic `git` configuration with some alias to make `git log` more readable.
+
+### i3wm
+
+`i3` windows manager configuration with `i3status`. *$mod* is the windows key. There is a simple poweroff menu with <kbd>$mod</kbd><kbd>Ctrl</kbd><kbd>Escape</kbd>.
+
+### slrn
+
+Simple `slrn` configuration with decent news ordering.
+
+### ssh
+
+`ssh` config for agent forwarding and connection multiplexing.
+
+### Sublime text 3
+
+Simple configuration here. Unix line ending and dark theme. Requires editor package manager.
+
+### Vim
+
+- Pathogen plugin manager
 - Better markdown coloration
 - Templates (plugins/temples.vim && templates/*.vim) template content for selected file (.html, .c, etc)
+- Colors : hybrid, jellybeans, molokai, solarized
 
-### Colors
+### zsh
 
-- hybrid
-- jellybeans
-- molokai
-- solarized
+- oh-my-zsh
+- simple archlinux bindings
+- xclip
+
+### Xorg
+
+- US altgr-intl keymap
+- dark scheme for terminal emulator URxvt
+- clickable links
