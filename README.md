@@ -1,8 +1,8 @@
 # Dotfiles
 
-## Install
+## Instalation
 
-After using *Gnu stow* for some time now, I'm back to manually symlinking the configurations I need.
+I manually symlink the configurations I need.
 I rely on `autojump`, `pygmentize`, `zsh-syntax-highlighting` and other CLI goodies to enhance `zsh` experience.
 
 ## Components
