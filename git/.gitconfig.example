@@ -8,7 +8,7 @@
 [alias]
     st              = status
     ci              = commit
-    cim             = commit -m    
+    cim             = commit -m
     co              = checkout
     br              = branch -a
     lg              = log --graph --pretty=tformat:'%Cred%h%Creset -%C(blue)%d%Creset %s %Cgreen(%an %cr)%Creset' --abbrev-commit --date=relative
