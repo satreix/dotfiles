@@ -1,8 +1,9 @@
+# This ZSH configuration file uses https://github.com/robbyrussell/oh-my-zsh
 export ZSH=$HOME/.oh-my-zsh
 
 ZSH_THEME="jreese"
 
-# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
+# Plugins can be found in ~/.oh-my-zsh/plugins/
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 plugins=(autojump colorize docker git jsontools nmap python pylint zsh-syntax-highlighting)
 
@@ -32,18 +33,18 @@ vpenis() {
     {print s/1024/50"/15+70";}'`|bc|sed 's/\(.$\)/.\1cm/'
 }
 
-mkcd() { mkdir -p "$1" && cd "$1" }
-epath() { export PATH=$PATH:$1 }
+mkcd() {
+    mkdir -p "$1" && cd "$1"
+}
 
 SSH_AGENT="~/.ssh/__ssh-agent__"
 if [ -f "$SSH_AGENT" ]; then
     source $SSH_AGENT > /dev/null
 fi
 
-function __start_agent {
+__start_agent() {
     echo "Initialising new SSH agent..."
-    /usr/bin/ssh-agent -t 7200 | sed 's/^echo/#echo/' > "${SSH_AGENT}"
-    echo succeeded
+    /usr/bin/ssh-agent -t 1h | sed 's/^echo/#echo/' > "${SSH_AGENT}"
     chmod 600 "${SSH_AGENT}"
     source "${SSH_AGENT}" > /dev/null
     /usr/bin/ssh-add;
