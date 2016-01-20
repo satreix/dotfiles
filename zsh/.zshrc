@@ -15,9 +15,6 @@ export PAGER='most'
 
 alias clipboard='xclip -selection clipboard'
 alias reload='source ~/.zshrc'
-alias install='yaourt -S'
-alias uninstall='yaourt -Rsn'
-alias update='yaourt -Syua'
 alias bmnt='bashmount'
 alias zshrc="$EDITOR ~/.zshrc"
 alias jog='~/bin/jogsoul/jogsoul.pl ~/bin/jogsoul/jogsoul.conf'
