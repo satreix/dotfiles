@@ -1,4 +1,3 @@
-" backup.vim
 " Backup related parameters
 
 set backup
