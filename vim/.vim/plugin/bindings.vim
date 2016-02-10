@@ -1,4 +1,3 @@
-" bindings.vim
 " Bindings parameters
 
 inoremap <F1> <esc>
