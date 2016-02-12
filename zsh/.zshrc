@@ -34,7 +34,7 @@ mkcd() {
     mkdir -p "$1" && cd "$1"
 }
 
-SSH_AGENT="~/.ssh/__ssh-agent__"
+SSH_AGENT="$HOME/.ssh/__ssh-agent__"
 if [ -f "$SSH_AGENT" ]; then
     source $SSH_AGENT > /dev/null
 fi
