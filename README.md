@@ -23,10 +23,6 @@ Simple `slrn` configuration with decent news ordering.
 
 `ssh` config for agent forwarding and connection multiplexing.
 
-### Sublime text 3
-
-Simple configuration here. Unix line ending and dark theme. Requires editor package manager.
-
 ### Vim
 
 - Pathogen plugin manager
