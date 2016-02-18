@@ -46,3 +46,10 @@ __start_agent() {
     source "${SSH_AGENT}" > /dev/null
     /usr/bin/ssh-add;
 }
+
+py_env () {
+    if [ -d "venv" ]; then
+        python -m venv venv;
+    fi
+    source venv/bin/activate
+}
