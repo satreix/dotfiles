@@ -48,7 +48,8 @@ __start_agent() {
 }
 
 py_env () {
-    if [ -d "venv" ]; then
+    if [ ! -d "venv" ]; then
+        echo "Creating python venv"
         python -m venv venv;
     fi
     source venv/bin/activate
