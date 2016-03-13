@@ -2,7 +2,7 @@
 
 # Install oh-my-zsh
 
-if [ -x /usr/bin/zsh ]; then
+if hash zsh 2>/dev/null; then
     echo "Found zsh, installing oh-my-zsh"
     sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 else
