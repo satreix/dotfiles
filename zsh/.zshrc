@@ -5,7 +5,7 @@ ZSH_THEME="jreese"
 
 # Plugins can be found in ~/.oh-my-zsh/plugins/
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-plugins=(autojump colorize docker git jsontools nmap python pylint zsh-syntax-highlighting)
+plugins=(autojump autopep8 colorize docker git jsontools nmap python pylint zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
