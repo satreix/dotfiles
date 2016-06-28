@@ -19,6 +19,7 @@
     uncommit        = update-ref HEAD HEAD^
     uncommithard    = reset --hard HEAD^
     undomerge       = reset --hard ORIG_HEAD
+    up              = !git fetch && git rebase --autostash FETCH_HEAD
     oups            = commit -a --amend -C HEAD
 [branch]
     autosetuprebase = always
