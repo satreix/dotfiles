@@ -1,11 +1,11 @@
 #!/bin/sh
+set -euo pipefail
 
-current_dir="$(pwd)"
-for dir in */ ; do
-    cd "$dir"
-    echo "$dir"
-    if [[ -x "setup.sh" ]]; then
-        ./setup.sh
-    fi
-    cd $current_dir
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
+
+for dir in $DIR/*/ ; do
+    pushd "$dir" > /dev/null
+    echo $(pwd)
+    [[ -x "setup.sh" ]] && ./setup.sh
+    popd > /dev/null
 done
